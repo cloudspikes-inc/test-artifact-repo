@@ -30,7 +30,7 @@ jobs:
           prerelease: false
           release_name: $GITHUB_SHA
           tag_name: ${{ github.ref }}
-          body_path: ./README.md
+          body_path: README.md
         env:
           GITHUB_TOKEN: ${{ github.token }}
           
