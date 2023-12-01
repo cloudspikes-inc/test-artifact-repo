@@ -3,7 +3,7 @@ name: release
 on:
   push:
     branches:
-      - 'main'
+      - 'feature/test-branch'
 
 jobs:
   build_release:
@@ -28,7 +28,7 @@ jobs:
         with:
           draft: false
           prerelease: false
-          release_name: $GITHUB_SHA
+          release_name: Releases
           tag_name: $GITHUB_RUN_ID
           body_path: CHANGELOG.md
         env:
