@@ -31,8 +31,8 @@ jobs:
         with:
           draft: false
           prerelease: false
-          release_name: $GITHUB_SHA
-          tag_name: $GITHUB_RUN_ID
+          release_name: ${{ GITHUB_SHA }}
+          tag_name: ${{ GITHUB_RUN_ID ))
           body_path: CHANGELOG.md
         env:
           GITHUB_TOKEN: ${{ secrets.GHA_TOKEN_VALUE }}
