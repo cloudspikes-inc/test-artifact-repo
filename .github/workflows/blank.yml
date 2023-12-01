@@ -21,6 +21,9 @@ jobs:
           ls -la
           pwd
           whoami
+          echo GITHUB_RUN_ID=$GITHUB_RUN_ID
+          echo GITHUB_SHA=$GITHUB_SHA
+          
         
       - name: release
         uses: actions/create-release@v1
